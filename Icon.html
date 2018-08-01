@@ -1,0 +1,35 @@
+{@html element}
+
+<script>
+
+import { icon } from '@fortawesome/fontawesome-svg-core'
+
+export default {
+  computed: {
+    element: (props) => {
+
+      let faIcon = props.icon
+
+      if (faIcon === undefined || faIcon === null) {
+        return 'Error: no icon defined'
+      }
+
+      let classes = props['class'] && props['class'].split(' ') || undefined
+
+      let fa = icon(faIcon,
+        {
+          classes: classes,
+          styles: props.styles,
+          attributes: props.attributes,
+          transform: props.transform,
+          mask: props.mask,
+          title: props.title,
+          symbol: props.symbol
+        })
+
+      return fa.html.join("")
+    }
+  }
+}
+
+</script>

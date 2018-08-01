@@ -1,0 +1,28 @@
+{
+  "name": "fa-svelte",
+  "version": "0.1.0",
+  "description": "Fontawesome 5 Sveltejs component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphapeter/fa-svelte.git"
+  },
+  "keywords": [
+    "font-awesome",
+    "sveltejs",
+    "svelte",
+    "fontawesome"
+  ],
+  "author": "Peter Klaesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alphapeter/fa-svelte/issues"
+  },
+  "homepage": "https://github.com/alphapeter/fa-svelte#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.2"
+  }
+}
