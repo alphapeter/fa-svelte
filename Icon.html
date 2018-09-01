@@ -1,35 +1,39 @@
-{@html element}
-
+<svg aria-hidden="true"
+     class={classes}
+     role="img"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox={viewBox}
+     title="{title}">
+  <path fill="currentColor" d={path} />
+</svg>
 <script>
-
-import { icon } from '@fortawesome/fontawesome-svg-core'
-
 export default {
-  computed: {
-    element: (props) => {
-
-      let faIcon = props.icon
-
-      if (faIcon === undefined || faIcon === null) {
-        return 'Error: no icon defined'
+  computed:{
+    viewBox({icon}) {
+      return `0 0 ${icon.icon[0]} ${icon.icon[1]}`
+    },
+    classes(props) {
+      let classes = "fa-svelte "
+      if(props.class) {
+        return classes + props.class;
       }
-
-      let classes = props['class'] && props['class'].split(' ') || undefined
-
-      let fa = icon(faIcon,
-        {
-          classes: classes,
-          styles: props.styles,
-          attributes: props.attributes,
-          transform: props.transform,
-          mask: props.mask,
-          title: props.title,
-          symbol: props.symbol
-        })
-
-      return fa.html.join("")
+      return classes
+    },
+    path({icon}) {
+      return icon.icon[4]
+    },
+    title(props) {
+      return props.title ? props.title : ''
     }
   }
 }
-
 </script>
+
+<style>
+  .fa-svelte {
+    width: 1em;
+    height: 1em;
+    overflow: visible;
+    display: inline-block;
+  }
+</style>
