@@ -62,3 +62,6 @@ typings/
 
 #jetbrains
 .idea
+
+#build output
+index.js

@@ -1,11 +1,11 @@
 {
   "name": "fa-svelte",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Fontawesome 5 Sveltejs component",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "svelte compile Icon.html -o index.js"
+    "build": "svelte compile ./src/Icon.html -o index.js"
   },
   "repository": {
     "type": "git",

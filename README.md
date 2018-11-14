@@ -1,15 +1,15 @@
 # fa-svelte
 Fontawesome 5 for svelte.js
 ## About
-A simple lightweight svelte component for Font Awesome SVG icons.
+A simple minimalistic lightweight svelte component for Font Awesome SVG icons.
 * Small footprint 
 * Only used icons will be bundled
 * No dependencies
 * Only SVG (no fonts)
 * Does not require additional CSS files 
 
-## installation 
-`npm install git+https://github.com/alphapeter/fa-svelte.git`
+## Installation 
+`npm install fa-svelte`
 
 ## Usage
 
@@ -24,7 +24,7 @@ Using font awesome solid Icons, first install using npm
 </Icon>
 
 <script>
-import Icon from 'fa-svelte/Icon.html'
+import Icon from 'fa-svelte'
 import { faCircle } from '@fortawesome/free-solid-svg-icons/faCircle'
 
 export default {
@@ -46,7 +46,7 @@ export default {
 </Icon>
 
 <script>
-import Icon from 'fa-svelte/Icon.html'
+import Icon from 'fa-svelte'
 import { faCircle } from '@fortawesome/free-solid-svg-icons/faCircle'
 
 export default {
@@ -70,26 +70,4 @@ export default {
     font-size: 14px;
 }
 </style>
-```
-
-### Title attribute
-```
-<Icon icon={faCircle} title="Navigation menu">
-</Icon>
-
-<script>
-import Icon from 'fa-svelte/Icon.html'
-import { faCircle } from '@fortawesome/free-solid-svg-icons/faCircle'
-
-export default {
-  components: {
-    Icon,
-  },
-  data() {
-    return {
-      faCircle: faCircle,
-    }
-  }
-}
-</script>
 ```
