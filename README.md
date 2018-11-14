@@ -15,7 +15,7 @@ A simple minimalistic lightweight svelte component for Font Awesome SVG icons.
 
 ### Basic usage
 
-Using font awesome solid Icons, first install using npm  
+Using font awesome solid Icons, first install them using npm  
 
 `npm install @fortawesome/free-solid-svg-icons`
 
@@ -71,3 +71,7 @@ export default {
 }
 </style>
 ```
+
+## Configuring webpack
+
+If you're using webpack with [svelte-loader](https://github.com/sveltejs/svelte-loader), make sure that you add `"svelte"` to [`resolve.mainFields`](https://webpack.js.org/configuration/resolve/#resolve-mainfields) in your webpack config. This ensures that webpack imports the uncompiled component (`src/Icon.html`) rather than the compiled version (`index.js`) — this is more efficient and may also resolve component crashes in runtime.  
