@@ -42,8 +42,10 @@ export default {
 
 ### Classes
 ```
-<Icon class="myClass1 myClass2" icon={faCircle}>
-</Icon>
+<div>
+  <Icon class="myClass1 myClass2" icon={faCircle}>
+  </Icon>
+</div>
 
 <script>
 import Icon from 'fa-svelte'
@@ -62,11 +64,11 @@ export default {
 </script>
 <style>
 
-:global(.myClass1) {
+div :global(.myClass1) {
     color: red;
 }
 
-:global(.myClass2) {
+div :global(.myClass2) {
     font-size: 14px;
 }
 </style>
