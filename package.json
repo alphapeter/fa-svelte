@@ -1,6 +1,6 @@
 {
   "name": "fa-svelte",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fontawesome 5 Sveltejs component",
   "main": "index.js",
   "svelte": "src/Icon.html",
