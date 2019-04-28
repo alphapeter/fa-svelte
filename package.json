@@ -1,7 +1,7 @@
 {
   "name": "fa-svelte",
-  "version": "1.0.1",
-  "description": "Fontawesome 5 Sveltejs component",
+  "version": "3.0.0",
+  "description": "Fontawesome 5 Sveltejs 3 component",
   "main": "index.js",
   "svelte": "src/Icon.html",
   "scripts": {
@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/alphapeter/fa-svelte#readme",
   "devDependencies": {
-    "svelte": "^2.15.3"
+    "svelte": "^3.1.0"
   }
 }
