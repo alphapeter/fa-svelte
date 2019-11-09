@@ -7,8 +7,11 @@
 
 ## Running
 
-`npm install`
-`npm run dev`
+`npm install`  
+`npm run dev`  
+open browser `http://localhost:8080`
+
+
 
 ## Building
 
