@@ -72,7 +72,7 @@ your webpack config. This ensures that webpack imports the uncompiled component 
 rather than the compiled version (`index.js`) — this is more efficient and will also resolve component 
 crash in runtime.  
 
-For a working web pack example, look at `examples/webpack`  
+For a working web pack example, look at [examples/webpack](https://github.com/alphapeter/fa-svelte/tree/master/examples/webpack)  
 
 ## Credits
 
