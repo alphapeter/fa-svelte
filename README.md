@@ -10,8 +10,13 @@ A simple minimalistic lightweight svelte component for Font Awesome SVG icons.
 * Only SVG (no fonts)
 * Does not require additional CSS files 
 
+This library is currently not intended to be fully featured, it is the option when size and speed is of importance.
+
+
 ## Installation 
-`npm install fa-svelte`
+Install as a development dependency
+
+`npm install -D fa-svelte`
 
 ## Usage
 
@@ -60,4 +65,16 @@ div :global(.myClass2) {
 
 ## Configuring webpack
 
-If you're using webpack with [svelte-loader](https://github.com/sveltejs/svelte-loader), make sure that you add `"svelte"` to [`resolve.mainFields`](https://webpack.js.org/configuration/resolve/#resolve-mainfields) in your webpack config. This ensures that webpack imports the uncompiled component (`src/Icon.html`) rather than the compiled version (`index.js`) — this is more efficient and will also resolve component crash in runtime.  
+If you're using webpack with [svelte-loader](https://github.com/sveltejs/svelte-loader), 
+make sure that you add `"svelte"` to 
+[`resolve.mainFields`](https://webpack.js.org/configuration/resolve/#resolve-mainfields) in 
+your webpack config. This ensures that webpack imports the uncompiled component (`src/Icon.svelte`) 
+rather than the compiled version (`index.js`) — this is more efficient and will also resolve component 
+crash in runtime.  
+
+For a working web pack example, look at `examples/webpack`  
+
+## Credits
+
+This component is based on the [template](https://github.com/sveltejs/component-template) 
+provided by [sveltejs](https://github.com/sveltejs) 

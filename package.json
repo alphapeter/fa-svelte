@@ -1,12 +1,18 @@
 {
   "name": "fa-svelte",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Fontawesome 5 Sveltejs 3 component",
+  "svelte": "src/Icon.svelte",
+  "module": "index.mjs",
   "main": "index.js",
-  "svelte": "src/Icon.html",
+  "files": [
+    "src",
+    "index.mjs",
+    "index.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "svelte compile ./src/Icon.html -o index.js"
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -25,6 +31,9 @@
   },
   "homepage": "https://github.com/alphapeter/fa-svelte#readme",
   "devDependencies": {
-    "svelte": "^3.1.0"
+    "rollup": "^1.11.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-svelte": "^5.0.0",
+    "svelte": "^3.12.1"
   }
 }

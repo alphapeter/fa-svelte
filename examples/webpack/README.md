@@ -6,4 +6,10 @@
 * Code formatting using prettier
 
 ## Running
-`npm install fa-svelte`
+
+`npm install`
+`npm run dev`
+
+## Building
+
+`npm run build`
