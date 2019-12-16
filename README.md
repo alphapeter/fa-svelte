@@ -26,7 +26,7 @@ Using font awesome solid Icons, first install them using npm
 
 `npm install @fortawesome/free-solid-svg-icons`
 
-```
+```html
 <Icon icon={icon}>
 </Icon>
 
@@ -39,7 +39,7 @@ let icon = faCircle;
 ```
 
 ### Classes
-```
+```html
 <div>
   <Icon class="myClass1 myClass2" icon={faCircle}>
   </Icon>

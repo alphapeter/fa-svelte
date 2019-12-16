@@ -1,3 +1,7 @@
+# next
+* Javascript language annotation in documentation
+* Updated npm dependencies in examples (npm audit)
+
 # 3.1 
 * Using Rollup for building the component
 * Changes component extension to .svelte from .html
